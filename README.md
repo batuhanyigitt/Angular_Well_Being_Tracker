@@ -3,18 +3,16 @@
 A simple **well-being tracking web app** built with **Angular 17 + Tailwind CSS**.  
 Users can log their daily mood & energy levels, add optional notes, and view statistics.
 
-![Demo](demo.gif)
-
 ---
 
 ## 🚀 Features
 
-- ✅ **Landing Page** — modern SaaS look, responsive & animated with AOS  
-- ✅ **Dashboard** — log daily mood & energy (stored in localStorage)  
-- ✅ **Statistics** — visualize past 10–15 days energy levels using Chart.js  
-- ✅ **About / Contact Pages** — basic info, contact form (no backend)  
-- ✅ **Animations** — scroll effects with AOS, smooth route transitions with Angular Animations  
-- ✅ **Responsive Design** — works on desktop, tablet, and mobile
+-  **Landing Page** — modern SaaS look, responsive & animated with AOS  
+-  **Dashboard** — log daily mood & energy (stored in localStorage)  
+-  **Statistics** — visualize past 10–15 days energy levels using Chart.js  
+-  **About / Contact Pages** — basic info, contact form (no backend)  
+-  **Animations** — scroll effects with AOS, smooth route transitions with Angular Animations  
+-  **Responsive Design** — works on desktop, tablet, and mobile
 
 ---
 
