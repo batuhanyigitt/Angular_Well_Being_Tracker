@@ -44,7 +44,7 @@ src/
 │ └─ services/
 │ └─ mood.service.ts
 ├─ assets/ # hero images, about images, contact illustration
-└─ styles.css # Tailwind base + custom styles
+└─ styles.css # Tailwind base + custom styles 
 
 
 ---
