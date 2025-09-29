@@ -1,0 +1,25 @@
+<section class="pt-24 pb-16 max-w-4xl mx-auto px-6 text-white">
+    <h1 class="text-3xl font-extrabold mb-6">Motivational Reminders</h1>
+    <p class="text-gray-300 mb-6">
+      Create daily reminders to keep yourself motivated and track your mood consistently.
+    </p>
+  
+    <div class="flex gap-3 mb-6">
+      <input [(ngModel)]="newReminder" placeholder="Enter reminder text"
+             class="flex-1 px-4 py-3 rounded-lg bg-[#1F2937] focus:outline-none focus:ring-2 focus:ring-brandAccent" />
+      <button (click)="addReminder()"
+              class="bg-gradient-to-r from-brandAccent to-brandMint text-brandDark px-5 py-3 rounded-lg font-semibold hover:opacity-90">
+        Add
+      </button>
+    </div>
+  
+    <div *ngIf="reminders.length === 0" class="text-gray-400">No reminders yet.</div>
+    <ul class="space-y-3">
+      <li *ngFor="let reminder of reminders; let i = index"
+          class="bg-[#334155] p-4 rounded-lg flex justify-between items-center">
+        {{reminder}}
+        <button (click)="deleteReminder(i)" class="text-red-400 hover:text-red-300 text-sm">Delete</button>
+      </li>
+    </ul>
+  </section>
+  

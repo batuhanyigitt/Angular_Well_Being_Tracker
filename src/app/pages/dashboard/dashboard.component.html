@@ -1,0 +1,76 @@
+<section class="p-4 sm:p-6 max-w-6xl mx-auto text-white">
+  <!-- Sayfa Başlığı -->
+  <h1 class="text-3xl font-bold mb-2">Welcome Back 👋</h1>
+  <p class="text-gray-300 mb-6">
+    Keep tracking your mood to understand your well-being over time.
+  </p>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <!-- Mood Entry Paneli -->
+    <div class="lg:col-span-1 bg-[#334155] p-5 rounded-2xl shadow-lg">
+      <h2 class="text-xl font-semibold mb-4">Today's Mood Entry</h2>
+
+      <!-- Mood Selector -->
+      <div class="flex gap-2 mb-4 flex-wrap">
+        <button *ngFor="let m of moods"
+                (click)="selectedMood = m"
+                [class.bg-brandAccent]="selectedMood===m"
+                [class.text-brandDark]="selectedMood===m"
+                class="text-3xl p-2 rounded-lg hover:bg-brandAccent/30 transition">
+          {{m}}
+        </button>
+      </div>
+
+      <!-- Energy Slider -->
+      <label class="block text-sm mb-1">Energy: {{energy}}</label>
+      <input type="range" min="1" max="5" [(ngModel)]="energy"
+             class="w-full accent-brandMint mb-4">
+
+      <!-- Notes -->
+      <textarea [(ngModel)]="notes" placeholder="Add a note (optional)"
+                class="w-full rounded-lg bg-[#1F2937] p-3 mb-4 focus:outline-none focus:ring-2 focus:ring-brandAccent"></textarea>
+
+      <!-- Save -->
+      <button (click)="saveEntry()"
+              class="w-full bg-gradient-to-r from-brandAccent to-brandMint text-brandDark py-2 rounded-lg font-semibold hover:opacity-90">
+        Save Entry
+      </button>
+    </div>
+
+    <!-- Sağ Panel -->
+    <div class="lg:col-span-2 space-y-6">
+      <!-- Günlük Log -->
+      <div class="bg-[#334155] p-5 rounded-2xl shadow-lg">
+        <h2 class="text-xl font-semibold mb-4">Daily Log</h2>
+          <div *ngIf="entries.length === 0" class="text-gray-400 text-sm">
+            No entries yet. Start by adding your mood above.
+          </div>
+
+          <div *ngFor="let entry of entries; let i = index"
+              class="bg-[#1F2937] p-3 rounded-xl mb-3 flex justify-between items-center flex-col sm:flex-row sm:gap-4">
+            <div>
+              <div class="font-semibold">{{entry.date}}</div>
+              <div>{{entry.mood}} | Energy: {{entry.energy}}</div>
+              <div class="text-xs text-gray-300" *ngIf="entry.notes">{{entry.notes}}</div>
+            </div>
+            <button (click)="deleteEntry(i)"
+                    class="text-red-400 hover:text-red-300 text-sm mt-2 sm:mt-0">Delete</button>
+          </div>
+      </div>
+
+      <!-- Grafik -->
+      <div class="bg-[#334155] p-5 rounded-2xl shadow-lg">
+        <h2 class="text-xl font-semibold mb-4">Energy Trend</h2>
+        <canvas id="energyChart" height="100"></canvas>
+      </div>
+
+      <!-- Motivasyon Bannerı -->
+      <div class="bg-gradient-to-r from-brandAccent to-brandMint text-brandDark rounded-2xl p-5 shadow-md">
+        <h3 class="text-lg font-semibold">Keep it up! 🌟</h3>
+        <p class="text-sm">
+          Tracking your mood daily helps you stay aware and balanced.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

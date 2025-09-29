@@ -1,0 +1,83 @@
+<!-- Hero -->
+<section
+  class="relative bg-gradient-to-br from-brandDark via-[#1E293B] to-[#0F172A] text-white pt-20 pb-10 overflow-hidden"
+  data-aos="fade-up"
+>
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-center relative z-10">
+    <!-- Sol taraf -->
+    <div data-aos="fade-right">
+      <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+        Track your <span class="text-brandAccent">mood</span> &
+        <span class="text-brandMint">energy</span>.
+      </h1>
+      <p class="mt-4 text-lg text-gray-300 max-w-lg">
+        Understand yourself better. Simple and private wellness tracking to help you maintain a balanced mind.
+      </p>
+      <div class="mt-6 flex gap-4" data-aos="fade-up">
+        <a routerLink="/dashboard"
+          class="bg-gradient-to-r from-brandAccent to-brandMint text-brandDark font-semibold px-6 py-3 rounded-md shadow-md hover:opacity-90">
+          Start Tracking
+        </a>
+        <a href="#features" class="border border-brandAccent px-6 py-3 rounded-md hover:bg-brandAccent/10">
+          Learn More
+        </a>
+      </div>
+    </div>
+    <!-- Sağ Taraf (Görsel) -->
+    <div class="relative flex justify-center md:justify-end">
+      <!-- Dairesel glow -->
+      <div class="absolute -top-10 -left-10 w-72 h-72 bg-brandAccent/20 rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-10 -right-10 w-72 h-72 bg-brandMint/20 rounded-full blur-3xl"></div>
+
+      <img
+        src="assets/relaxed-tech-serenity.png"
+        alt="Meditating person illustration"
+        class="relative z-10 w-72 md:w-[24rem] drop-shadow-[0_10px_35px_rgba(56,189,248,0.4)]"
+      />
+    </div>
+  </div>
+
+  <!-- Alt dekoratif dalga -->
+  <svg class="absolute bottom-0 left-0 w-full text-brandAccent/10" viewBox="0 0 1440 320" aria-hidden="true">
+    <path fill="currentColor" fill-opacity="0.3"
+      d="M0,160L80,154.7C160,149,320,139,480,149.3C640,160,800,192,960,202.7C1120,213,1280,203,1360,197.3L1440,192V320H1360C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320H0Z">
+    </path>
+  </svg>
+</section>
+
+<!-- Features -->
+<section id="features" class="bg-[#1F2937] text-white pt-12 pb-16">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-8" data-aos="fade-up">Features Overview</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="bg-[#334155] p-6 rounded-xl shadow hover:shadow-lg transition" data-aos="zoom-in">
+        <div class="text-4xl mb-3">😊</div>
+        <h3 class="text-lg font-semibold">Daily Mood Tracking</h3>
+        <p class="text-sm text-gray-300 mt-1">Log how you feel every day.</p>
+      </div>
+
+      <div class="bg-[#334155] p-6 rounded-xl shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="100">
+        <div class="text-4xl mb-3">⚡</div>
+        <h3 class="text-lg font-semibold">Energy Level & Notes</h3>
+        <p class="text-sm text-gray-300 mt-1">Track energy with a slider & add notes.</p>
+      </div>
+
+      <div class="bg-[#334155] p-6 rounded-xl shadow hover:shadow-lg transition" data-aos="zoom-in" data-aos-delay="200">
+        <div class="text-4xl mb-3">📊</div>
+        <h3 class="text-lg font-semibold">Insights & Charts</h3>
+        <p class="text-sm text-gray-300 mt-1">Weekly/monthly progress overview.</p>
+      </div>
+
+      <a
+        routerLink="/reminders"
+        class="bg-[#334155] p-6 rounded-xl shadow hover:shadow-lg transition block"
+        data-aos="zoom-in" data-aos-delay="300"
+      >
+        <div class="text-4xl mb-3">⏰</div>
+        <h3 class="text-lg font-semibold">Motivational Reminders</h3>
+        <p class="text-sm text-gray-300 mt-1">Get daily reminders to stay consistent.</p>
+      </a>
+    </div>
+  </div>
+</section>

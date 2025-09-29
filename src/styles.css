@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'aos/dist/aos.css';
+
+body {
+  @apply bg-brandDark text-white font-sans;
+}

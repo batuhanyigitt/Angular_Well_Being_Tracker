@@ -1,0 +1,30 @@
+<section class="p-6 max-w-6xl mx-auto text-white">
+    <h1 class="text-3xl font-bold mb-6">Your Mood & Energy Insights</h1>
+  
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+      <div class="bg-[#334155] p-4 rounded-xl text-center">
+        <h2 class="text-xl font-semibold mb-2">Average Energy</h2>
+        <p class="text-3xl font-bold">{{averageEnergy}}</p>
+      </div>
+      <div class="bg-[#334155] p-4 rounded-xl text-center">
+        <h2 class="text-xl font-semibold mb-2">Most Common Mood</h2>
+        <p class="text-3xl">{{mostCommonMood}}</p>
+      </div>
+      <div class="bg-[#334155] p-4 rounded-xl text-center">
+        <h2 class="text-xl font-semibold mb-2">Streak</h2>
+        <p class="text-3xl font-bold">{{streak}} days</p>
+      </div>
+    </div>
+  
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="bg-[#334155] p-4 rounded-xl">
+        <h2 class="text-lg mb-3 font-semibold">Energy Over Time</h2>
+        <canvas id="energyOverTime" height="100"></canvas>
+      </div>
+      <div class="bg-[#334155] p-4 rounded-xl">
+        <h2 class="text-lg mb-3 font-semibold">Mood Frequency</h2>
+        <canvas id="moodFrequency" height="100"></canvas>
+      </div>
+    </div>
+  </section>
+  

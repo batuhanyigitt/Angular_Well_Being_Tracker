@@ -1,0 +1,12 @@
+# build ve cache
+dist/
+.angular/
+node_modules/
+
+# IDE
+.vscode/
+.DS_Store
+
+# temporary
+*.log
+allfiles.txt
