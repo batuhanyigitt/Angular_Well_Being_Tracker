@@ -59,16 +59,6 @@ src/
 
 ---
 
-## 🎥 Demo
-
-- Add a **short screen recording** (`demo.gif` or `demo.mp4`).  
-- Example (Mac):  
-  1. `Cmd+Shift+5` → screen record.  
-  2. Kayıttan sonra `ffmpeg` veya [ezgif.com](https://ezgif.com/video-to-gif) ile GIF’e çevir.
-- Kaydı `src/assets/` içine değil, root’a koy (örneğin `demo.gif`).
-
----
-
 ## 🚀 Run Locally
 
 ```bash
