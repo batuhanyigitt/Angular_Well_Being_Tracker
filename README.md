@@ -1,64 +1,78 @@
-<<<<<<< HEAD
-# MyApp
+# 🌟 Mood & Energy Tracker
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.17.
+A simple **well-being tracking web app** built with **Angular 17 + Tailwind CSS**.  
+Users can log their daily mood & energy levels, add optional notes, and view statistics.
 
-## Development server
+![Demo](demo.gif)
 
-To start a local development server, run:
+---
+
+## 🚀 Features
+
+- ✅ **Landing Page** — modern SaaS look, responsive & animated with AOS  
+- ✅ **Dashboard** — log daily mood & energy (stored in localStorage)  
+- ✅ **Statistics** — visualize past 10–15 days energy levels using Chart.js  
+- ✅ **About / Contact Pages** — basic info, contact form (no backend)  
+- ✅ **Animations** — scroll effects with AOS, smooth route transitions with Angular Animations  
+- ✅ **Responsive Design** — works on desktop, tablet, and mobile
+
+---
+
+## 🛠️ Tech Stack
+
+- **Angular 17** (standalone components, routing, animations)
+- **Tailwind CSS** (utility-first styling)
+- **Chart.js** (energy trend chart)
+- **AOS** (scroll animations)
+- **TypeScript + LocalStorage** (data persistence)
+
+---
+
+## 📂 Project Structure
+
+src/
+├─ app/
+│ ├─ pages/
+│ │ ├─ landing/
+│ │ ├─ dashboard/
+│ │ ├─ features/
+│ │ ├─ about/
+│ │ └─ contact/
+│ ├─ shared/
+│ │ ├─ navbar/
+│ │ └─ footer/
+│ └─ services/
+│ └─ mood.service.ts
+├─ assets/ # hero images, about images, contact illustration
+└─ styles.css # Tailwind base + custom styles
+
+
+---
+
+## 💡 Interesting Implementations
+
+- **LocalStorage Service** — `MoodService` keeps mood logs persistent across sessions.
+- **Chart.js Dynamic Update** — charts refresh automatically after new logs.
+- **Angular Animations** — smooth page transitions between routes.
+- **AOS** — adds elegant fade/zoom scroll effects to sections.
+
+---
+
+## 🎥 Demo
+
+- Add a **short screen recording** (`demo.gif` or `demo.mp4`).  
+- Example (Mac):  
+  1. `Cmd+Shift+5` → screen record.  
+  2. Kayıttan sonra `ffmpeg` veya [ezgif.com](https://ezgif.com/video-to-gif) ile GIF’e çevir.
+- Kaydı `src/assets/` içine değil, root’a koy (örneğin `demo.gif`).
+
+---
+
+## 🚀 Run Locally
 
 ```bash
-ng serve
-```
+git clone https://github.com/<username>/mood-energy-tracker.git
+cd mood-energy-tracker
+yarn install
+yarn start
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-=======
-# Angular_Well_Being_Tracker
-A simple **well-being tracking web app** built with **Angular 17 + Tailwind CSS**.   Users can log their daily mood &amp; energy levels, add optional notes, and view statistics.
->>>>>>> e4e28ff654a92395a0298b9f09da9ccac845ca74
