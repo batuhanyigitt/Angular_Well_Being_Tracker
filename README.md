@@ -29,7 +29,7 @@ Users can log their daily mood & energy levels, add optional notes, and view sta
 ---
 
 ## 📂 Project Structure
-<pre>```
+<pre>
 src/
 ├─ app/
 │ ├─ pages/
@@ -45,7 +45,7 @@ src/
 │ └─ mood.service.ts
 ├─ assets/ # hero images, about images, contact illustration
 └─ styles.css # Tailwind base + custom styles 
-``` </pre>
+</pre>
 
 
 ---
