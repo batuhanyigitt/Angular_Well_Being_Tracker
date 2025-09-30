@@ -3,6 +3,8 @@
 A simple **well-being tracking web app** built with **Angular 17 + Tailwind CSS**.  
 Users can log their daily mood & energy levels, add optional notes, and view statistics.
 
+DEMO: https://drive.google.com/file/d/1yFXEKM4tmaaztftElHiU6B-0LUV2VoEy/view?usp=sharing
+
 ---
 
 ## 🚀 Features
