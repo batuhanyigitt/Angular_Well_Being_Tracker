@@ -61,7 +61,7 @@ src/
 
 ---
 
-🚀 Getting Started
+## 🚀 Getting Started
 
 Requirements: Node 18+, Yarn (or npm)
 
