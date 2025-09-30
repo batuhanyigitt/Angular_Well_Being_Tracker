@@ -60,8 +60,8 @@ src/
 ## 🚀 Run Locally
 
 ```bash
-git clone https://github.com/<username>/mood-energy-tracker.git
-cd mood-energy-tracker
+git clone https://github.com/batuhanyigitt/Angular_Well_Being_Tracker.git
+cd Angular_Well_Being_Tracker
 yarn install
 yarn start
 
