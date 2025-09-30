@@ -1,9 +1,8 @@
 # 🌟 Mood & Energy Tracker
 
-A simple **well-being tracking web app** built with **Angular 17 + Tailwind CSS**.  
-Users can log their daily mood & energy levels, add optional notes, and view statistics.
+🧘‍♀️ Track your daily mood & energy levels, visualize progress, and stay mindful. Built with Angular 17 + Tailwind CSS.
 
-DEMO: https://drive.google.com/file/d/1yFXEKM4tmaaztftElHiU6B-0LUV2VoEy/view?usp=sharing
+🎥 Video Walkthrough: https://drive.google.com/file/d/1yFXEKM4tmaaztftElHiU6B-0LUV2VoEy/view?usp=sharing
 
 ---
 
@@ -50,20 +49,31 @@ src/
 
 ---
 
-## 💡 Interesting Implementations
+## 💡 Notable Implementations
 
-- **LocalStorage Service** — `MoodService` keeps mood logs persistent across sessions.
-- **Chart.js Dynamic Update** — charts refresh automatically after new logs.
-- **Angular Animations** — smooth page transitions between routes.
-- **AOS** — adds elegant fade/zoom scroll effects to sections.
+🗂 LocalStorage Service — MoodService keeps user logs persistent.
+
+📊 Dynamic Charts — Chart.js updates instantly when new entries are added.
+
+🎞 Smooth Page Transitions — Angular animations between routes.
+
+✨ AOS Effects — fade & zoom on scroll for a polished UX.
 
 ---
 
-## 🚀 Run Locally
+🚀 Getting Started
 
-```bash
+Requirements: Node 18+, Yarn (or npm)
+
+# Clone repository
 git clone https://github.com/batuhanyigitt/Angular_Well_Being_Tracker.git
 cd Angular_Well_Being_Tracker
+
+# Install dependencies
 yarn install
+
+# Start dev server
 yarn start
 
+
+Your app will run at http://localhost:4200
